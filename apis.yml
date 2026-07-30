@@ -1,7 +1,23 @@
 aid: kings
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kings.png
 name: Kings
-description: Kings is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Kings International Olympiads (kings.lt) is an international educational olympiads
+  organization that runs academic competitions for students, operating a multi-language web
+  platform served from kingsolympiad.com. It was surfaced through the 500 Global venture
+  portfolio and added to the API Evangelist network. As of this enrichment pass the organization
+  publishes no public API, developer portal, documentation, SDKs, or machine-readable discovery
+  artifacts (/.well-known/*, llms.txt all resolve to the SPA shell, i.e. soft 404s).
 url: https://raw.githubusercontent.com/api-evangelist/kings/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Education
+- Olympiad
+- Academic Competition
+- Students
+- EdTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kings-domain-security.yml
 - type: Website
   url: https://kings.lt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
